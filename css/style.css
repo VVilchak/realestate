@@ -186,23 +186,31 @@ body {
     0px 20px 13px rgba(0, 0, 0, 0.015),
     0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778),
     0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222);
-  border: 1px solid #dadada;
   display: flex;
   height: 86px;
+  position: relative;
+  margin-right: -188px;
+  z-index: 2;
 }
 .form-main-block__input {
   padding: 0px 0px 0px 74px;
   background-color: transparent;
   width: 100%;
   flex: 1 1 auto;
+  border: 1px solid #dadada;
+  font-size: 20px;
+}
+.form-main-block__input::placeholder {
+  color: rgba(49, 53, 59, 0.3);
 }
 .form-main-block__button {
   cursor: pointer;
   width: 188px;
   background-color: #f85a47;
   padding: 5px 15px;
-  font-weight: 700;
+  font-weight: 600;
   color: #fff;
+  flex: 0 0 188px;
 }
 .body-main-block__slider {
   flex: 0 1 50%;
